@@ -6,7 +6,7 @@ export const COMPANY = {
   serviceArea: "Surrey, Delta, Langley, White Rock, and Coquitlam, BC",
   logo: "https://www.estradaglovergroup.com/wp-content/uploads/2026/03/cropped-08F4C3D9-4C56-4079-B70F-215313894D2F-1.png",
   tagline: "Seamless Gutters · Surrey & Lower Mainland, BC",
-  banner: "Booking now — spring install slots open",
+  banner: "Booking now — summer install slots open",
 };
 
 export const NAV_LINKS = [
@@ -132,14 +132,14 @@ export const GALLERY = {
   intro:
     "A sample of recent installs and repairs around Surrey, Delta, Langley, and White Rock.",
   items: [
-    { tag: "Before / After", caption: "Surrey Bungalow", img: "https://images.pexels.com/photos/7031581/pexels-photo-7031581.jpeg" },
-    { tag: "Leaf Guard", caption: "Install — Delta", img: "https://images.unsplash.com/photo-1721815693498-cc28507c0ba2?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200" },
-    { tag: "New Build", caption: "Langley", img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200" },
-    { tag: "Repair & Reseal", caption: "White Rock", img: "https://images.pexels.com/photos/37499254/pexels-photo-37499254.jpeg" },
-    { tag: "Downspout Reroute", caption: "Surrey", img: "https://images.unsplash.com/photo-1634853982486-c06f0e17940f?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200" },
-    { tag: "Full Replacement", caption: "Cloverdale", img: "https://images.unsplash.com/photo-1587582423116-ec07293f0395?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200" },
-    { tag: "Colour-Match Install", caption: "Fleetwood", img: "https://images.pexels.com/photos/7031581/pexels-photo-7031581.jpeg" },
-    { tag: "Commercial Job", caption: "Guildford", img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200" },
+    { tag: "Seamless Install", caption: "Surrey Bungalow", img: "https://images.unsplash.com/photo-1720065609938-ec0e33ffd9ad?q=85&w=1200&auto=format&fit=crop" },
+    { tag: "Full Replacement", caption: "Install — Delta", img: "https://images.unsplash.com/photo-1755114203680-d39d95efa82c?q=85&w=1200&auto=format&fit=crop" },
+    { tag: "New Build", caption: "Langley", img: "https://images.pexels.com/photos/26595553/pexels-photo-26595553.jpeg?auto=compress&cs=tinysrgb&w=1200" },
+    { tag: "Repair & Reseal", caption: "White Rock", img: "https://images.unsplash.com/photo-1602193069473-0c78775ec7e1?q=85&w=1200&auto=format&fit=crop" },
+    { tag: "Downspout Reroute", caption: "Surrey", img: "https://images.unsplash.com/photo-1635958854453-214b7af60fb5?q=85&w=1200&auto=format&fit=crop" },
+    { tag: "Colour-Match Install", caption: "Cloverdale", img: "https://images.unsplash.com/photo-1566071634551-224a639a1c7d?q=85&w=1200&auto=format&fit=crop" },
+    { tag: "Leaf Guard", caption: "Fleetwood", img: "https://images.unsplash.com/photo-1755113717103-eceec858546a?q=85&w=1200&auto=format&fit=crop" },
+    { tag: "Eaves & Fascia", caption: "Guildford", img: "https://images.pexels.com/photos/11808101/pexels-photo-11808101.jpeg?auto=compress&cs=tinysrgb&w=1200" },
   ],
 };
 
@@ -157,8 +157,8 @@ export const TESTIMONIALS = {
     {
       quote:
         "The new gutters look fantastic and the crew was in and out in a day. Really happy with the results.",
-      initials: "JB",
-      name: "John Burger",
+      initials: "MR",
+      name: "Mark Reimer",
       location: "Coquitlam, BC",
     },
     {
