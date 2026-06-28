@@ -1,0 +1,144 @@
+{
+  "theme": "light",
+  "archetype": "Archetype 4 (Swiss & High-Contrast) - Modified for Home Services Trust",
+  "branding": {
+    "company_name": "Estrada-Glover Gutters",
+    "logo_instructions": "Logo top-left of navbar (~140px wide) and footer, with text 'Estrada-Glover Gutters' next to it. Since no actual logo URL is provided, build a typography-based logo using the Outfit font in Deep Navy with an accompanying simple icon.",
+    "tone": "Professional, reliable, established, trustworthy, modern."
+  },
+  "colors": {
+    "primary": "#0a1f44",
+    "primary_description": "Deep Navy. Use for prominent headings, hero backgrounds, primary text on light backgrounds, and footers.",
+    "accent": "#1e6fc2",
+    "accent_description": "Bright Blue. Use exclusively for CTA buttons, key icons, active states, and highlights.",
+    "background_base": "#ffffff",
+    "background_alt": "#f5f7fa",
+    "text_dark": "#0a1f44",
+    "text_light": "#ffffff",
+    "border": "#e2e8f0",
+    "rules": "Strict adherence: Do not use orange/amber or any shades outside the Navy/Blue/Grey/White palette."
+  },
+  "typography": {
+    "headings_font": "Outfit",
+    "body_font": "DM Sans",
+    "scale": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-none font-bold",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight leading-tight font-semibold",
+      "h3": "text-xl sm:text-2xl font-semibold",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm"
+    },
+    "guidelines": "Do not use 'Inter' for headings. Never center text by default; align text left for readability unless specifically creating balance in hero or CTA blocks. Ensure contrast ratio is >4.5:1."
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "p-1, p-2, p-4, p-6, p-8, p-12, p-16, p-20, p-24, p-32",
+    "section_padding": "py-20 md:py-24",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "cards": "Subtle roundness (max 8px border-radius), flat solid backgrounds, minimal shadow, 1px subtle borders (border-gray-200). Use p-6 or p-8 for internal padding.",
+    "grid_strategy": "Mobile-first. Use 1 column on mobile, 2 on tablet, 3 on desktop for service cards and testimonials."
+  },
+  "components_and_sections": {
+    "navbar": {
+      "type": "Sticky",
+      "style": "bg-white/90 backdrop-blur-xl border-b border-gray-200 z-50 fixed w-full top-0",
+      "elements": "Logo + 'Estrada-Glover Gutters' text left, Desktop links center, 'Get a Quote' CTA button right."
+    },
+    "hero": {
+      "style": "bg-[#0a1f44] text-white relative pt-32 pb-20 lg:pt-48 lg:pb-32",
+      "content": "Headline targeting seamless gutter installation, subheadline establishing 15+ years of trust, primary CTA 'Get a Quote' and secondary CTA 'Call Now'. Stats banner (15+ Years, 1-Day Install, 5-Star Rating) integrated cleanly below the main content. Overlay background image with bg-[#0a1f44]/80 to ensure text readability."
+    },
+    "problems_education": {
+      "style": "bg-[#f5f7fa]",
+      "content": "4-column or 2x2 grid showing: Foundation Damage, Fascia Rot, Landscape Erosion, Ice Dams. Use Lucide icons (accent colored) inside solid white cards."
+    },
+    "services_grid": {
+      "style": "bg-white",
+      "content": "6 Service Cards: Seamless Gutter Installation, Leaf Guard Systems, Gutter Repairs, Gutter Cleaning, Downspout Extensions, New Construction & Renos. Clean light grey (#f5f7fa) cards with subtle border and Deep Navy headings."
+    },
+    "process": {
+      "style": "bg-[#f5f7fa]",
+      "content": "4-step layout detailing the installation process. High-contrast numbers (Bright Blue)."
+    },
+    "gallery": {
+      "style": "bg-white",
+      "content": "Grid of recent work using provided images. Aspect ratios must be controlled (e.g., aspect-square or 4:3) with object-cover."
+    },
+    "testimonials": {
+      "style": "bg-[#f5f7fa]",
+      "content": "3 cards showing 5-star ratings. Use yellow/gold for stars, Navy for text, inside clean white cards."
+    },
+    "quote_form": {
+      "style": "bg-[#0a1f44] text-white section",
+      "content": "Shadcn Form elements. White inputs with dark text, or dark inputs with white borders and white text."
+    },
+    "mobile_cta_bar": {
+      "style": "fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 z-50 flex justify-between shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] lg:hidden",
+      "content": "Buttons for 'Call Now' and 'Get a Quote' spanning the width."
+    },
+    "footer": {
+      "style": "bg-[#0a1f44] text-white py-16",
+      "content": "Logo + text, contact info, quick links."
+    }
+  },
+  "interactions_and_motion": {
+    "hover_states": "All buttons must darken on hover (e.g., bg-[#1e6fc2] to bg-[#155b9e] or bg-[#0a1f44] to bg-[#081733]). Service cards should have a subtle upward translation (-translate-y-1) and shadow increase on hover.",
+    "focus_states": "Use focus:ring-2 focus:ring-[#1e6fc2] focus:ring-offset-2 for accessibility.",
+    "transitions": "Use transition-all duration-300 ease-in-out."
+  },
+  "testing_attributes": {
+    "rules": "All interactive and key informational elements MUST include a 'data-testid' attribute.",
+    "examples": [
+      "data-testid='navbar-logo'",
+      "data-testid='hero-cta-quote-button'",
+      "data-testid='hero-cta-call-button'",
+      "data-testid='service-card-1'",
+      "data-testid='mobile-cta-call'",
+      "data-testid='quote-form-submit'"
+    ]
+  },
+  "media": {
+    "icons_library": "lucide-react",
+    "image_urls": [
+      {
+        "category": "hero_background",
+        "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBob3VzZSUyMGV4dGVyaW9yfGVufDB8fHx8MTc4MjYyMDMzMHww&ixlib=rb-4.1.0&q=85",
+        "description": "Modern house exterior, use with a heavy navy overlay for hero background"
+      },
+      {
+        "category": "process_or_about",
+        "url": "https://images.pexels.com/photos/37499254/pexels-photo-37499254.jpeg",
+        "description": "Construction worker on roof frame"
+      },
+      {
+        "category": "problem_education",
+        "url": "https://images.unsplash.com/photo-1634853982486-c06f0e17940f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwxfHxyYWluJTIwb24lMjByb29mfGVufDB8fHx8MTc4MjYyMDMzMHww&ixlib=rb-4.1.0&q=85",
+        "description": "Rain on gutter close up"
+      },
+      {
+        "category": "gallery_1",
+        "url": "https://images.pexels.com/photos/7031581/pexels-photo-7031581.jpeg",
+        "description": "Modern home exterior scenery"
+      },
+      {
+        "category": "gallery_2",
+        "url": "https://images.unsplash.com/photo-1587582423116-ec07293f0395?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwxfHxyb29mJTIwY29uc3RydWN0aW9uJTIwd29ya2VyfGVufDB8fHx8MTc4MjYyMDMzMHww&ixlib=rb-4.1.0&q=85",
+        "description": "Worker in hard hat"
+      },
+      {
+        "category": "gallery_3",
+        "url": "https://images.unsplash.com/photo-1721815693498-cc28507c0ba2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBob3VzZSUyMGV4dGVyaW9yfGVufDB8fHx8MTc4MjYyMDMzMHww&ixlib=rb-4.1.0&q=85",
+        "description": "Two story house with clean roof lines"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Build out the app strictly based on these design guidelines using React, Tailwind CSS, and Shadcn UI.",
+    "Do NOT use HTML native inputs/selects; use Shadcn components properly themed to the Deep Navy/Bright Blue palette.",
+    "Implement the Layout and Spacing System exactly as outlined (generous spacing like py-20, py-24).",
+    "Ensure the hero background image is properly layered under a heavy #0a1f44 background tint (e.g. bg-[#0a1f44]/80 to bg-[#0a1f44]/90) to guarantee high text contrast.",
+    "Add 'data-testid' attributes to all interactive elements for testability.",
+    "Ensure the mobile floating CTA bar is visible and fixed at the bottom ONLY on mobile viewports (lg:hidden).",
+    "Maintain strict adherence to the forbidden color rule: NO orange, amber, or slate tones."
+  ]
+}
