@@ -1,10 +1,9 @@
 import { useState } from "react";
-import axios from "axios";
 import { toast } from "sonner";
 import { Phone, Mail, MapPin, CheckCircle2, Loader2 } from "lucide-react";
 import { COMPANY, SERVICE_OPTIONS } from "@/data/content";
 
-const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
+const FORMSPREE = "https://formspree.io/f/xaqgpkok";
 
 const EMPTY = {
   full_name: "",
@@ -30,10 +29,25 @@ export default function QuoteForm() {
     }
     setSubmitting(true);
     try {
-      await axios.post(`${API}/quotes`, form);
-      setDone(true);
-      setForm(EMPTY);
-      toast.success("Quote request sent! We'll be in touch shortly.");
+      const res = await fetch(FORMSPREE, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          name: form.full_name,
+          phone: form.phone,
+          email: form.email,
+          address: form.address,
+          service: form.service,
+          message: form.message,
+        }),
+      });
+      if (res.ok) {
+        setDone(true);
+        setForm(EMPTY);
+        toast.success("Quote request sent! We'll be in touch shortly.");
+      } else {
+        throw new Error("Failed");
+      }
     } catch (err) {
       console.error(err);
       toast.error("Something went wrong. Please call us or try again.");
