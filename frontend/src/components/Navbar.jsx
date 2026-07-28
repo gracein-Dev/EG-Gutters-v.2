@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { COMPANY, NAV_LINKS } from "@/data/content";
+import { trackPhoneCallClick } from "@/lib/gtag";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -23,8 +24,9 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between gap-3">
           <span className="opacity-90">{COMPANY.banner}</span>
-          <a
+          
             href={COMPANY.phoneHref}
+            onClick={trackPhoneCallClick}
             data-testid="topbar-call-link"
             className="hidden sm:flex items-center gap-1.5 font-medium text-[#7fb4e8] hover:text-white transition-colors"
           >
@@ -42,7 +44,7 @@ export default function Navbar() {
         }`}
       >
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
-          <a
+          
             href="#top"
             data-testid="navbar-logo"
             className="flex items-center gap-3 shrink-0"
@@ -57,7 +59,7 @@ export default function Navbar() {
 
           <div className="hidden lg:flex items-center gap-8">
             {NAV_LINKS.map((l) => (
-              <a
+              
                 key={l.href}
                 href={l.href}
                 data-testid={`nav-link-${l.href.replace("#", "")}`}
@@ -69,14 +71,15 @@ export default function Navbar() {
           </div>
 
           <div className="hidden lg:flex items-center gap-4">
-            <a
+            
               href={COMPANY.phoneHref}
+              onClick={trackPhoneCallClick}
               data-testid="navbar-phone"
               className="flex items-center gap-2 text-sm font-semibold text-[#0a1f44] hover:text-[#1e6fc2] transition-colors"
             >
               <Phone size={16} /> {COMPANY.phone}
             </a>
-            <a
+            
               href="#quote"
               data-testid="navbar-cta-quote"
               className="inline-flex items-center rounded-full bg-[#1e6fc2] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#155b9e] transition-colors"
@@ -101,7 +104,7 @@ export default function Navbar() {
             className="lg:hidden border-t border-gray-100 bg-white px-4 sm:px-6 py-4 space-y-1"
           >
             {NAV_LINKS.map((l) => (
-              <a
+              
                 key={l.href}
                 href={l.href}
                 onClick={close}
@@ -110,7 +113,7 @@ export default function Navbar() {
                 {l.label}
               </a>
             ))}
-            <a
+            
               href="#quote"
               onClick={close}
               className="mt-3 inline-flex w-full items-center justify-center rounded-full bg-[#1e6fc2] px-5 py-3 text-sm font-semibold text-white"
