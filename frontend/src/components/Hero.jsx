@@ -1,5 +1,6 @@
 import { Phone, ArrowRight } from "lucide-react";
 import { COMPANY, HERO } from "@/data/content";
+import { trackPhoneCallClick } from "@/lib/gtag";
 
 export default function Hero() {
   return (
@@ -34,15 +35,16 @@ export default function Hero() {
           </p>
 
           <div className="mt-9 flex flex-col sm:flex-row gap-4">
-            <a
+            
               href="#quote"
               data-testid="hero-cta-quote-button"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-[#1e6fc2] px-7 py-4 text-base font-semibold text-white hover:bg-[#155b9e] transition-colors"
             >
               Get a Free Quote <ArrowRight size={18} />
             </a>
-            <a
+            
               href={COMPANY.phoneHref}
+              onClick={trackPhoneCallClick}
               data-testid="hero-cta-call-button"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 bg-white/5 px-7 py-4 text-base font-semibold text-white hover:bg-white hover:text-[#0a1f44] transition-colors"
             >
