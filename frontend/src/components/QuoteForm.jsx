@@ -2,6 +2,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 import { Phone, Mail, MapPin, CheckCircle2, Loader2 } from "lucide-react";
 import { COMPANY, SERVICE_OPTIONS } from "@/data/content";
+import { trackQuoteRequest, trackPhoneCallClick } from "@/lib/gtag";
 
 const FORMSPREE = "https://formspree.io/f/xaqgpkok";
 
@@ -42,6 +43,7 @@ export default function QuoteForm() {
         }),
       });
       if (res.ok) {
+        trackQuoteRequest({ email: form.email, phone: form.phone });
         setDone(true);
         setForm(EMPTY);
         toast.success("Quote request sent! We'll be in touch shortly.");
@@ -83,7 +85,7 @@ export default function QuoteForm() {
               <Phone className="text-[#1e6fc2] shrink-0 mt-1" size={22} />
               <span className="text-white/85">
                 Prefer to talk? Call{" "}
-                <a href={COMPANY.phoneHref} className="font-semibold text-white underline-offset-2 hover:underline">
+                <a href={COMPANY.phoneHref} onClick={trackPhoneCallClick} className="font-semibold text-white underline-offset-2 hover:underline">
                   {COMPANY.phone}
                 </a>{" "}
                 — we pick up most calls live during business hours.
