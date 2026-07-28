@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin } from "lucide-react";
 import { COMPANY, NAV_LINKS } from "@/data/content";
+import { trackPhoneCallClick } from "@/lib/gtag";
 
 export default function Footer() {
   return (
@@ -31,7 +32,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-2.5">
               {NAV_LINKS.map((l) => (
                 <li key={l.href}>
-                  <a
+                  
                     href={l.href}
                     className="text-white/75 hover:text-white transition-colors"
                   >
@@ -48,8 +49,9 @@ export default function Footer() {
             </h4>
             <ul className="mt-4 space-y-3.5">
               <li>
-                <a
+                
                   href={COMPANY.phoneHref}
+                  onClick={trackPhoneCallClick}
                   data-testid="footer-phone"
                   className="flex items-center gap-3 text-white/80 hover:text-white transition-colors"
                 >
@@ -57,7 +59,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a
+                
                   href={`mailto:${COMPANY.email}`}
                   data-testid="footer-email"
                   className="flex items-center gap-3 text-white/80 hover:text-white transition-colors break-all"
