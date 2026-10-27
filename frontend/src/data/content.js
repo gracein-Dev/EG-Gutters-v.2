@@ -24,7 +24,6 @@ export const HERO = {
   subheading:
     "Custom-fit seamless gutters, leaf guards, and repairs that keep water moving away from your home — not into your basement. Free on-site quotes, most installs completed in a single day.",
   stats: [
-   
     { value: "1-Day", label: "Typical install time" },
     { value: "5★", label: "Average customer rating" },
   ],
@@ -170,7 +169,7 @@ export const TESTIMONIALS = {
     },
     {
       quote:
-        "I found them on Facebook. They're local, and I found them to be very honest and reliable. Their workmanship is excellent, with great attention to detail.",
+        "I found them on Facebook. They\u2019re local, and I found them to be very honest and reliable. Their workmanship is excellent, with great attention to detail.",
       initials: "SZ",
       name: "Shelly Zheng",
       location: "Google Review",
