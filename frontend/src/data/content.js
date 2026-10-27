@@ -24,7 +24,7 @@ export const HERO = {
   subheading:
     "Custom-fit seamless gutters, leaf guards, and repairs that keep water moving away from your home — not into your basement. Free on-site quotes, most installs completed in a single day.",
   stats: [
-    { value: "15+", label: "Years installing gutters" },
+   
     { value: "1-Day", label: "Typical install time" },
     { value: "5★", label: "Average customer rating" },
   ],
@@ -144,29 +144,36 @@ export const GALLERY = {
 };
 
 export const TESTIMONIALS = {
-  eyebrow: "Client Testimonials",
-  heading: "What homeowners say after install",
+  eyebrow: "Google Reviews",
+  heading: "What customers say about us on Google",
   items: [
     {
       quote:
-        "None of my gutters leak anymore and they make the whole house look brand new. Quick, clean job from start to finish.",
-      initials: "AG",
-      name: "Alicia Goodman",
-      location: "Surrey, BC",
+        "Great job installing my gutters. The guys were very professional and did a great job. The house looks so good.",
+      initials: "JH",
+      name: "Jas Hundal",
+      location: "Google Review",
     },
     {
       quote:
-        "The new gutters look fantastic and the crew was in and out in a day. Really happy with the results.",
-      initials: "MR",
-      name: "Mark Reimer",
-      location: "Coquitlam, BC",
+        "Prompt service right on time and did an excellent job. Will call again if required as well recommend to others.",
+      initials: "ML",
+      name: "Marile Lucuik",
+      location: "Google Review",
     },
     {
       quote:
-        "They tracked down every leak point on our old gutters and fixed them properly instead of just patching. Good honest work.",
-      initials: "AS",
-      name: "Arman Singh",
-      location: "Langley, BC",
+        "Found these young men on facebook marketplace and they were quick on the ball and very professional. Their work ethic is excellent along with their integrity, cheers!",
+      initials: "KH",
+      name: "Kaden Han",
+      location: "Google Review",
+    },
+    {
+      quote:
+        "I found them on Facebook. They're local, and I found them to be very honest and reliable. Their workmanship is excellent, with great attention to detail.",
+      initials: "SZ",
+      name: "Shelly Zheng",
+      location: "Google Review",
     },
   ],
 };
