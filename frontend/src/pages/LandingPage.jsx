@@ -125,7 +125,7 @@ function Testimonials() {
     <section id="reviews" data-testid="testimonials-section" className="bg-[#f5f7fa] py-20 md:py-24 scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Reveal><SectionHead {...TESTIMONIALS} /></Reveal>
-        <div className="mt-12 grid gap-6 lg:grid-cols-3">
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
           {TESTIMONIALS.items.map((t, i) => (
             <Reveal key={i} delay={i * 90} data-testid={`testimonial-card-${i}`} className="flex flex-col rounded-xl bg-white border border-gray-200 p-7 shadow-sm">
               <div className="flex gap-0.5 text-[#f5b301]">
