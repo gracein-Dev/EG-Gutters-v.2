@@ -32,8 +32,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-2.5">
               {NAV_LINKS.map((l) => (
                 <li key={l.href}>
-                  
-                    href={l.href}
+                    <a href={l.href}
                     className="text-white/75 hover:text-white transition-colors"
                   >
                     {l.label}
@@ -49,8 +48,7 @@ export default function Footer() {
             </h4>
             <ul className="mt-4 space-y-3.5">
               <li>
-                
-                  href={COMPANY.phoneHref}
+                  <a href={COMPANY.phoneHref}
                   onClick={trackPhoneCallClick}
                   data-testid="footer-phone"
                   className="flex items-center gap-3 text-white/80 hover:text-white transition-colors"
@@ -59,8 +57,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                
-                  href={`mailto:${COMPANY.email}`}
+                  <a href={`mailto:${COMPANY.email}`}
                   data-testid="footer-email"
                   className="flex items-center gap-3 text-white/80 hover:text-white transition-colors break-all"
                 >
